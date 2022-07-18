@@ -33,9 +33,6 @@ const Likebutton: NextPage<IProps> = ({
 		}
 	}, [filterLikes, likes]);
 
-	// console.log(alreadyLiked);
-	// console.log(likes.length);
-
 	return (
 		<div className={`${flex} gap-6`}>
 			<div className="mt-4 flex flex-col justify-center items-center cursor-pointer">
