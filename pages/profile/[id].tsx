@@ -24,6 +24,7 @@ const Profile = ({ data }: IProps) => {
 
 	const videos = showUserVideos ? 'border-b-2 border-black' : 'text-gray-400';
 	const liked = !showUserVideos ? 'border-b-2 border-black' : 'text-gray-400';
+	// console.log(videosList);
 
 	useEffect(() => {
 		if (showUserVideos) {
