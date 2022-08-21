@@ -25,8 +25,6 @@ const Profile = ({ data }: IProps) => {
 	const videos = showUserVideos ? 'border-b-2 border-black' : 'text-gray-400';
 	const liked = !showUserVideos ? 'border-b-2 border-black' : 'text-gray-400';
 
-	// console.log(videosList);
-
 	useEffect(() => {
 		if (showUserVideos) {
 			setVideosList(userVideos);
@@ -34,6 +32,8 @@ const Profile = ({ data }: IProps) => {
 			setVideosList(userLikedVideos);
 		}
 	}, [showUserVideos, userLikedVideos, userVideos]);
+
+	console.log(videosList);
 	return (
 		<div className="w-full">
 			<div className="flex gap-6 md:gap-10 mb-4 bg-white w-full">
